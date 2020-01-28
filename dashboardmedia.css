@@ -25,6 +25,9 @@
       .logo1 .texth5  {
         margin-top:10px;
       }
+      .logo1 .header-img {
+        width:30%;
+      }
       .texth5{
           background: linear-gradient( #24ef8d, #09a1f9);
           -webkit-background-clip: text;
@@ -40,7 +43,7 @@
         margin-bottom:22px
       }
       .header-img {
-        width: 30%;
+        width: 20%;
       }
       .menu-button{
       
@@ -50,7 +53,7 @@
         overflow-y: scroll;
       }
       .nav-header .open-icon {
-        font-size: 30px;
+        font-size: 22px;
         padding-right: 8px;
       
       }
