@@ -233,6 +233,10 @@
 .right-parent8 {
   /* margin-top:20px; */
 }
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+}
 /* table view */
 .table-card {
   margin-top: 90px;
