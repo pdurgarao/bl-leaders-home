@@ -203,6 +203,7 @@ margin-left :0.9rem;
     color: #c9c9c9;
 }
 .right-parent8 {
+    position:relative;
     margin-top: 65px;
     margin-right: auto;
     margin-left: auto;
@@ -211,17 +212,19 @@ margin-left :0.9rem;
     border-radius: 20px;
     background: #2f81e7;
     margin-bottom:10px;
+    text-align:center;
 }
 .parent8-icon{
-    vertical-align: sub;
-    margin-left: 0.5rem;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
     color: white;
 }
 .parent8-submit{
     display: inline-block;
     margin-right: auto;
     vertical-align:bottom;
-    padding-left: 35px;
     color: white;
     font-size: 13px;
 }
