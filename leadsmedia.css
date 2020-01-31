@@ -1,4 +1,4 @@
-@media (max-width: 575.98px) {
+@media (max-width: 854px) {
   .parent {
     margin-right: 0;
     margin-left: 0;
@@ -254,7 +254,7 @@
 
 }
 .content-card {
-  margin-top: 42px;
+  margin-top: 60px;
   text-align: center;
   padding:1rem;
 }

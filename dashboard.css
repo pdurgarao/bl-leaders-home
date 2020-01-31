@@ -3,7 +3,7 @@ body,html{
     height:100%;
     width:100%;
     padding: 0;
-    font-family: 'Maven Pro', sans-serif;
+    
 }
 /* .main-row {
     height: 100%;
@@ -24,6 +24,7 @@ top: 0;
 
 .texth4 {
     margin-left:0.5rem;
+    font-family: 'Maven Pro', sans-serif;
     font-size: large;
     background: linear-gradient( #24ef8d, #09a1f9);
     -webkit-background-clip: text;
@@ -48,6 +49,7 @@ top: 0;
     overflow-y: auto;
     height:54%;
     font-size:14px;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .sidenav-list1 li {
@@ -64,6 +66,7 @@ top: 0;
    
 }
 .sidenav-list1 li a {
+    font-family: 'Maven Pro', sans-serif;
     padding: 0!important;
     color:blue;
     margin-left: 0.2rem;
@@ -88,6 +91,7 @@ top: 0;
    
 }
 .sidenav-list li a {
+    font-family: 'Maven Pro', sans-serif;
     padding: 0!important;
     color:#b5c8d5;
     margin-left: 0.2rem;
