@@ -230,6 +230,9 @@
 .time-par-am:focus, .time-par-pm:focus {
   box-shadow: none;
 }
+.right-parent8 {
+  /* margin-top:20px; */
+}
 /* table view */
 .table-card {
   margin-top: 90px;
