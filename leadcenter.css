@@ -36,6 +36,8 @@
  background-color: white;
  border-radius: 20px;
  color:#8080899c;
+ margin-bottom:20px;
+ /* overflow-x: auto; */
  }
 
 
@@ -64,7 +66,7 @@
     color:#01214a;
  }
  .lead-middle-details {
-
+    overflow-x: auto;
  }
  .tablerow:hover {
      background: #2f81e7;
@@ -118,6 +120,7 @@ margin-left:10px
      display:flex;
      justify-content: space-between;
      align-items: center;
+     margin-top:20px;
  }
 
  .page-child-text{
@@ -126,14 +129,29 @@ margin-left:10px
     font-weight: 500;
  }
 
- .pagelinkitem1 {
-     border-top-left-radius: 20px;
-     border-bottom-left-radius: 20px;
-     border-top-right-radius: 20px;
-     border-bottom-right-radius: 20px;
-
+ .pagelinkitem1, .pagelinkitem5, .pagelinkitem4 {
+     border-top-left-radius: 20px!important;
+     border-bottom-left-radius: 20px!important;
+     border-top-right-radius: 20px!important;
+     border-bottom-right-radius: 20px!important;
+     margin: 5px;
+     background-color: #17345a;
+     color:white;
+     padding:3px 7px;
     
  }
+ .pagelinkitem2, .pagelinkitem3 {
+     margin:5px;
+     background-color: #eff2f9;
+     border:none;
+     color:#cad8e2;
+     padding:3px 7px;
+
+ }
+ .pagelinkitem2:hover, .pagelinkitem3:hover{
+     
+ }
+
  /* checkbox */
  .check-custom{
      position:relative;

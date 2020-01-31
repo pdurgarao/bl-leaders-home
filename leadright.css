@@ -44,9 +44,7 @@
     border-radius: 86px;
     width: 25%;
 }
-.right-parent2-child1 .parent2-name {
-    /* margin-left: 20px; */
-}
+
 .right-parent2-child2, .right-parent2-child3 {
     display: flex;
     justify-content: space-between;
@@ -194,6 +192,9 @@
     font-size: small;
     background:#ff8a00;
     padding: 0px 12px;
+}
+.btn-action-lead:focus {
+    box-shadow: none;
 }
 .down-action{
 margin-left :0.9rem;
