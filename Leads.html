@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="Leads.css" rel="stylesheet">
-    <link href="dashboardmedia.css" rel="stylesheet">
+    <link href="leadsflex.css" rel="stylesheet">
+    <link href="leadcenter.css" rel="stylesheet">
+    <link href="leadright.css" rel="stylesheet">
+    <link rel="stylesheet" href="leadsmedia.css">
+    <!-- <link href="dashboardmedia.css" rel="stylesheet">
     <link href="flex.css" rel="stylesheet">
     <link href="right.css" rel="stylesheet">
-    <link href="progress.css" rel="stylesheet">
+    <link href="progress.css" rel="stylesheet">-->
     <script src="dashboard.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="file:///C:/Users/Admin/Downloads/font/fontawesome-free-5.12.0-web/css/all.css"> -->
     <script src="https://kit.fontawesome.com/f5184d7000.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -18,80 +23,633 @@
 </head>
 
 <body>
-<div class="container-fluid parent row">
-    <div class="col-lg-2 content-left d-none d-lg-block">
-        <div class="heading-log">
-            <img src="../Log&images/Builder Manager.jpg" class="img-fluid d-block">
-            <h4 class="texth4">BUILDERSLEAD</h4>
+    <div class="container-fluid parent row">
+        <!-- Desktop view -->
+        <div class="col-lg-2 content-left d-none d-md-block">
+            <div class="heading-log">
+                <img src="Builder Manager.jpg" class="img-fluid d-block">
+                <h4 class="texth4">BUILDERSLEAD</h4>
+            </div>
+
+            <aside class="aside-list">
+                <div class="sidenav-list1">
+                    <ul class="nav-list">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h6 class="text-sub">Dashboard</h6>
+                <div class="sidenav-list">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-campground"></i>Campaigns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Leads.html" class="nav-link active-class text-primary"><i
+                                    class="fas fa-filter"></i>Leads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="far fa-check-square"></i>Contacted</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-comments"></i>Follow up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-history"></i>Pending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="far fa-check-circle"></i>Closed</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h6 class="text-sub">Others</h6>
+                <div class="sidenav-list">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="far fa-calendar"></i>Calender</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-user"></i>Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-user-circle"></i>Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="far fa-question-circle"></i>Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="footer-content">
+                <div class="user-log">
+                    <img src="Builder Manager2.jpg" alt="user-profile" class="d-block w-25 h-25 ">
+                    <div class="user-log-dtls">
+                        <h6 class="user-name">The Grand By Hyatt</h6>
+                        <p>MANAGER</p>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a type="button" class="up" style="color:white">SIGNOUT</a>
+                </div>
+            </div>
+        </div>
+        <!-- Desktop Closing -->
+
+        <!-- mobile view  -->
+        <div class="container d-block d-md-none">
+            <div id="wrapper-mobile">
+                <div class="nav-header">
+                    <div class="logo">
+                        <img src="Builder Manager.jpg" alt="logo" class="img-fluid header-img">
+                    </div>
+                    <span class="menu-buttton">
+                        <a href="#" onclick="openSlide()"><i class="fas fa-bars open-icon" aria-hidden="true"></i></a>
+                    </span>
+                </div>
+                <div class="sidebar" id="sidebar-list-menu">
+                    <div class="list">
+                        <div class="logo1">
+                            <img src="Builder Manager.jpg" alt="logo" class="img-fluid header-img">
+                            <h5 class="texth5">BUILDERSLEAD</h5>
+                        </div>
+                        <a href="#" onclick="closeSide()"><i class="fas fa-times close-icon"></i></a>
+                        <ul class="sidebar-list-child1">
+                            <li class="sidebar-list-item-child1">
+                                <a href="index.html" class="single-board"><i
+                                        class="fas fa-tachometer-alt font-icon"></i>Dashboard</a>
+                            </li>
+                        </ul>
+                        <h6 class="side-nav-sub">Dashboard</h6>
+                        <ul class="sidebar-list-child2">
+                            <li class="sidebar-list-item-child2">
+                                <a href="test-click" class="linktags"><i
+                                        class="fas fa-campground font-icon"></i>Campaigns</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="Leads.html" class="linktags"><i class="fas fa-filter font-icon"></i>Leads</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="far fa-check-square font-icon"></i>Contacted</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="fas fa-comments font-icon"></i>Follow up</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="fas fa-history font-icon"></i>Pending</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="far fa-check-circle font-icon"></i>Closed</a>
+                            </li>
+                        </ul>
+                        <h6 class="side-nav-sub">Others</h6>
+                        <ul class="sidebar-list-child2">
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="far fa-calendar font-icon"></i>Calender</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="fas fa-user font-icon"></i>Users</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="fas fa-user-circle font-icon"></i>Profile</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="far fa-question-circle font-icon"></i>Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-footer-content">
+                        <div class="user-logout">
+                            <img src="Builder Manager2.jpg" alt="user-profile" class="d-block w-25 h-25 ">
+                            <div class="user-logout-dtls">
+                                <h6 class="userout-name">The Grand By Hyatt</h6>
+                                <p class="textp">MANAGER</p>
+                            </div>
+                        </div>
+
+                        <div class="button-logout">
+                            <a type="button" class="logoutup" style="color:white">SIGNOUT</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <aside class="aside-list" id="sidenav">
-            <div class="sidenav-list1">
-                <ul class="nav-list">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link"><i class="fas fa-tachometer-alt"></i>
-                            Dashboard</a>
-                    </li>
-                </ul>
-            </div>
 
-            <h6 class="text-sub">Dashboard</h6>
-            <div class="sidenav-list">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-campground"></i>Campaigns</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active-class text-primary"><i class="fas fa-filter"></i>Leads</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="far fa-check-square"></i>Contacted</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-comments"></i>Follow up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-history"></i>Pending</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="far fa-check-circle"></i>Closed</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- mobile view closing -->
 
-            <h6 class="text-sub">Others</h6>
-            <div class="sidenav-list">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="far fa-calendar"></i>Calender</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-user"></i>Users</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-user-circle"></i>Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="far fa-question-circle"></i>Help</a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-        <div class="footer-content">
-            <div class="user-log">
-                <img src="../Log&images/Builder Manager2.jpg" alt="user-profile" class="d-block w-25 h-25 ">
-                <div class="user-log-dtls">
-                    <h6 class="user-name">The Grand By Hyatt</h6>
-                    <p>MANAGER</p>
+        <!-- middle-content -->
+        <div class="col-lg-7 lead-middle-content" onclick="closeSide()">
+            <div class="container">
+                <div class="middle-header">
+                    <form class="form middle-header-child1">
+                        <input class="form-control search-text" type="search" placeholder="SEARCH" id="search">
+                        <span class="search-icon"><i class="fas fa-search"></i></span>
+                    </form>
+                    <div class="middle-header-child2">
+                        <div class=" btn add-icon">
+                            <i class="fas fa-plus-circle icon-add"></i>
+                            <span class="add-icon-text">CREATE CAMPAIGN</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="buttons">
-                <a type="button" class="up" style="color:white">SIGNOUT</a>
+            <div class="container lead-middle-content1">
+                <div class="content1-child-heading">
+                    <h4 class="content1-h4">The Grand By Hyatt Campaign</h4>
+                    <div class="content1-child-images">
+                        <img src="anna.jpg" alt="profile pic" class="img-fluid content1-images-lead">
+                        <img src="mario1.jpg" alt="profile pic" class="img-fluid content1-images-lead">
+                        <img src="gail.jpg" alt="profile pic" class="img-fluid content1-images-lead">
+                    </div>
+                    <div class="icon">
+                        <span><i class="fas fa-info-circle"></i></span>
+                    </div>
+                </div>
             </div>
+
+            <div class="container lead-middle-content2">
+                <div class="content2-short">
+                    <button class="btn content2-btn1" type="button" data-toggle="dropdown">
+                        <i class="fas fa-align-left content1-btn1-icon"></i>SORT BY
+                        <i class="fas fa-chevron-down content1-btn1-icon2" id="dropdown-menu" aria-haspopup="true"
+                            aria-expanded="false"></i>
+                    </button>
+                </div>
+                <div class="content2-date">
+                    <button class=" dropdown btn content2-btn1" type="button" data-toggle="dropdown">
+                        <i class="fas fa-calendar content1-btn1-icon"></i>ANY DATE
+                        <i id="dropdown-menu-link" aria-haspopup="true" aria-expanded="false"
+                            class="fas fa-chevron-down content1-btn1-icon2"></i id="dropdown-menu-link"
+                            aria-haspopup="true" aria-expanded="false">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-menu-link">
+                        <input class="dropdown-item" type="date" id="date">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container lead-middle-content3 d-none d-lg-block">
+                <div class="content3">
+                    <ul class="nav nav-pills content3-tab-left">
+                        <li class="nav-item content3-tab-left1 all-leads">
+                            <a class="nav-link" data-toggle="pill" href="#tab-leads">All Leads</a>
+                        </li>
+                        <li class="nav-item content3-tab-left1">
+                            <a class="nav-link" data-toggle="pill" href="#tab-leads1">Contacted</a>
+                        </li>
+                        <li class="nav-item content3-tab-left1">
+                            <a class="nav-link" data-toggle="pill" href="#">Follow up</a>
+                        </li>
+                        <li class="nav-item content3-tab-left1">
+                            <a class="nav-link" data-toggle="pill" href="#">Pending</a>
+                        </li>
+                        <li class="nav-item content3-tab-left1">
+                            <a class="nav-link" data-toggle="pill" href="#">Closed</a>
+                        </li>
+                    </ul>
+                    <div class="content3-tab-right">
+                        <span class="content3-tab-right1" data-toggle="tooltip" data-placement="bottom"
+                            title="Upload"><i class="fas fa-upload"></i></span>
+                        <span class="content3-tab-right1" data-toggle="tooltip" title="Print"><i
+                                class="fas fa-print"></i></span>
+                        <span class="content3-tab-right1" data-toggle="tooltip" data-placement="bottom"
+                            title="Delete"><i class="fas fa-trash-alt" style="color:#3c5574"></i></span>
+                    </div>
+                </div>
+
+                <div class="lead-middle-details" class="tab-content">
+                    <table class="table table-borderless lead-middle-details-table">
+                        <tbody class="table-body">
+                            <tr class="tablerow">
+                                <th class="tabledata-check">
+                                    <label class="check-custom">
+                                        <input type="checkbox" class="checkbox-table" id="check"><span class="check-box"></span>
+                                    </label>
+                                </th>
+                                <td class="tabledata-image"><img src="mario1.jpg"
+                                        class="img-fluid table-image"></td>
+                                <td class="tabledata">Mario Speedwagon</td>
+                                <td class="tabledata">123456789</td>
+                                <td class="tabledata">mario@gamil.com</td>
+                                <td class="tabledata">19.09.2019</td>
+                                <td class="tabledata dropdown tabledata-bottom">
+                                    <a class="btn btn-action" role="btn" type="button" id="dropdown-lead"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Actions<i class="fas fa-chevron-down action-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lead">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tablerow">
+                                <th class="tabledata-check">
+                                    <label class="check-custom">
+                                        <input type="checkbox" class="checkbox-table" id="check"><span class="check-box"></span>
+                                    </label>
+                                </th>
+                                <td class="tabledata-image"><img src="anna.jpg"
+                                        class="img-fluid table-image"></td>
+                                <td class="tabledata">Anna Sthesia</td>
+                                <td class="tabledata">123456789</td>
+                                <td class="tabledata">mario@gamil.com</td>
+                                <td class="tabledata">19.09.2019</td>
+                                <td class="tabledata dropdown tabledata-bottom">
+                                    <a class="btn btn-action" role="btn" type="button" id="dropdown-lead"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Actions<i class="fas fa-chevron-down action-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lead">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tablerow">
+                                <th class="tabledata-check">
+                                    <label class="check-custom">
+                                        <input type="checkbox" class="checkbox-table" id="check"><span class="check-box"></span>
+                                    </label>
+                                </th>
+                                <td class="tabledata-image"><img src="gail.jpg"
+                                        class="img-fluid table-image"></td>
+                                <td class="tabledata">Gail Forcewind</td>
+                                <td class="tabledata">123456789</td>
+                                <td class="tabledata">mario@gamil.com</td>
+                                <td class="tabledata">19.09.2019</td>
+                                <td class="tabledata dropdown tabledata-bottom">
+                                    <a class="btn btn-action" role="btn" type="button" id="dropdown-lead"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Actions<i class="fas fa-chevron-down action-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lead">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tablerow">
+                                <th class="tabledata-check">
+                                    <label class="check-custom">
+                                        <input type="checkbox" class="checkbox-table" id="check"><span class="check-box"></span>
+                                    </label>
+                                </th>
+                                <td class="tabledata-image"><img src="petey.jpg"
+                                        class="img-fluid table-image"></td>
+                                <td class="tabledata">Petey Cruiser</td>
+                                <td class="tabledata">123456789</td>
+                                <td class="tabledata">mario@gamil.com</td>
+                                <td class="tabledata">19.09.2019</td>
+                                <td class="tabledata dropdown tabledata-bottom">
+                                    <a class="btn btn-action" role="btn" type="button" id="dropdown-lead"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Actions<i class="fas fa-chevron-down action-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lead">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tablerow">
+                                <th class="tabledata-check">
+                                    <label class="check-custom">
+                                        <input type="checkbox" class="checkbox-table" id="check"><span class="check-box"></span>
+                                    </label>
+                                </th>
+                                <td class="tabledata-image"><img src="anna.jpg"
+                                        class="img-fluid table-image"></td>
+                                <td class="tabledata">Mario Speedwagon</td>
+                                <td class="tabledata">123456789</td>
+                                <td class="tabledata">mario@gamil.com</td>
+                                <td class="tabledata">19.09.2019</td>
+                                <td class="tabledata dropdown tabledata-bottom">
+                                    <a class="btn btn-action" role="btn" type="button" id="dropdown-lead"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Actions<i class="fas fa-chevron-down action-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lead">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tablerow">
+                                <th class="tabledata-check">
+                                    <label class="check-custom">
+                                        <input type="checkbox" class="checkbox-table" id="check"><span class="check-box"></span>
+                                    </label>
+                                </th>
+                                <td class="tabledata-image"><img src="mario1.jpg"
+                                        class="img-fluid table-image"></td>
+                                <td class="tabledata">Mario Speedwagon</td>
+                                <td class="tabledata">123456789</td>
+                                <td class="tabledata">mario@gamil.com</td>
+                                <td class="tabledata">19.09.2019</td>
+                                <td class="tabledata dropdown tabledata-bottom">
+                                    <a class="btn btn-action" role="btn" type="button" id="dropdown-lead"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Actions<i class="fas fa-chevron-down action-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lead">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tablerow">
+                                <th class="tabledata-check">
+                                    <label class="check-custom">
+                                        <input type="checkbox" class="checkbox-table" id="check"><span class="check-box"></span>
+                                    </label>
+                                </th>
+                                <td class="tabledata-image"><img src="petey.jpg"
+                                        class="img-fluid table-image"></td>
+                                <td class="tabledata">Petey Cruiser</td>
+                                <td class="tabledata">123456789</td>
+                                <td class="tabledata">mario@gamil.com</td>
+                                <td class="tabledata">19.09.2019</td>
+                                <td class="tabledata dropdown tabledata-bottom">
+                                    <a class="btn btn-action" role="btn" type="button" id="dropdown-lead"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Actions<i class="fas fa-chevron-down action-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lead">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tablerow" id="color">
+                                <th class="tabledata-check">
+                                    <label class="check-custom">
+                                        <input type="checkbox" class="checkbox-table" id="check"><span class="check-box"></span>
+                                    </label>
+                                </th>
+                                <td class="tabledata-image"><img src="gail.jpg"
+                                        class="img-fluid table-image"></td>
+                                <td class="tabledata">Gail Forcewind</td>
+                                <td class="tabledata">123456789</td>
+                                <td class="tabledata">mario@gamil.com</td>
+                                <td class="tabledata">19.09.2019</td>
+                                <td class="tabledata dropdown tabledata-bottom">
+                                    <a class="btn btn-action" role="btn" type="button" id="dropdown-lead"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Actions<i class="fas fa-chevron-down action-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lead">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tablerow">
+                                <th class="tabledata-check">
+                                    <label class="check-custom">
+                                        <input type="checkbox" class="checkbox-table" id="check"><span class="check-box"></span>
+                                    </label>
+                                </th>
+                                <td class="tabledata-image"><img src="anna.jpg"
+                                        class="img-fluid table-image"></td>
+                                <td class="tabledata">Anna Sthesias</td>
+                                <td class="tabledata">123456789</td>
+                                <td class="tabledata">mario@gamil.com</td>
+                                <td class="tabledata">19.09.2019</td>
+                                <td class="tabledata dropdown tabledata-bottom">
+                                    <a class="btn btn-action" role="btn" type="button" id="dropdown-lead"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Actions<i class="fas fa-chevron-down action-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lead">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="container page-cont">
+                <div class="page-child">
+                    <p class="page-child-text">21-30 0f 126</p>
+                </div>
+                <div class="page-nation page-middle-nation">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination page-main-list-container">
+                          <li class="page-item page-main-item1">
+                            <a class="page-link pagelinkitem1" href="#" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item page-main-item2"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item page-main-item3"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item page-main-item4"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item page-main-item5">
+                            <a class="page-link pagelinkitem" href="#">Next</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
         </div>
 
+        <!-- closing middle-content -->
+
+        <!-- right-content -->
+        <div class="col-lg-3 right-parent-main" onclick="closeSide()">
+            <div class="container right-parent1 ">
+                <div class="rightparent1-child">
+                    <h4 class="right-parent-child-text">The Grand By Hyatt Campaign</h4>
+                </div>
+            </div>
+            <div class="container right-parent2">
+                <!-- <div class="right-parent2-child1-small">
+                    <p class="parent2-text">New</p>
+                </div> -->
+                <div class="right-parent2-child1">
+                    <img src="gail.jpg" alt="pofile-pic" class="img-fluid parent2-image">
+                    <h5 class="parent2-name">Petey Cruiser</h5>
+                    <div class="right-parent2-child1-small">
+                        <p class="parent2-text">New</p>
+                    </div>
+                </div>
+                <div class="right-parent2-child2">
+                    <p class="parent2-num">+91 12345678</p>
+                    <a href="#" role="btn" type="button" style="color:white"><i
+                            class="fas fa-phone-alt parent2-icon"></i></a>
+                </div>
+                <div class="right-parent2-child3">
+                    <p class="parent2-email">peteycruiser@gmail.com</p>
+                    <a href="#" role="btn" type="button" style="color:white"><i
+                            class="far fa-envelope parent2-icon"></i></a>
+                </div>
+            </div>
+            <div class=" container right-parent3">
+                <p class="parent3-text">Interested</p>
+            </div>
+            <div class="container right-parent4">
+                <form class="form">
+                    <!-- <label class="radio-custom1">
+                        <input type="radio" id="check" name="buy"><span classs="radio-btn">Buying</span>
+                        <span class="radio-box"></span>
+                    </label>
+                    <label class="radio-custom2">
+                        <input type="radio" class="radio-btn2" id="check1" name="buy">Visiting
+                        <span class="radio-box"></span>
+                    </label> -->
+                    <input type="radio" name="buy" class="radio-btn"><span class="buy">Buying</span>
+                    <input type="radio" name="buy" class="radio-btn"><span class="visit">Visiting</span> 
+                </form>
+            </div>
+            <div class="container right-parent5">
+                <p class="parent5-text">Best time to call</p>
+                <div class="time-date-right">
+                    <div class="right-parent5-child1">
+                        <!-- <div class="right-parent5-child1-parent"> -->
+                        <p class="parent5-date">Date</p>
+                        <div class="parent5-date-child">
+                            <table class="table table-borderless right-table-date">
+                                <tbody>
+                                    <tr class="table-row-right">
+                                        <td class="table-row-data">March</td>
+                                        <td class="table-row-data">15</td>
+                                        <td class="table-row-data">2018</td>
+                                    </tr>
+                                    <tr class="table-row-right1">
+                                        <td class="table-row-data1">April</td>
+                                        <td class="table-row-data1">16</td>
+                                        <td class="table-row-data1">2019</td>
+                                    </tr>
+                                    <tr class="table-row-right2">
+                                        <td class="table-row-data2">May</td>
+                                        <td class="table-row-data2">17</td>
+                                        <td class="table-row-data2">2020</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- </div> -->
+                    </div>
+
+                    <div class="container right-parent5-time">
+                        <p class="parent5-time">Time</p>
+                        <h6 class="parent5-time-schedule">4:35</h6>
+                        <div class="time-par">
+                            <button class="btn time-par-am">AM</button>
+                            <button class="btn time-par-pm">PM</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container right-parent6">
+                <div class="right-parent6-note-words">
+                    <p class="parent6-text">Note</p>
+                    <p><small class="parent6-words">250/1000 words</small></p>
+                </div>
+                <div class="right-parent6-child">
+                    <address class="parent6-child-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pariatur tempora deleniti distinctio maiores ea ipsum voluptatibus
+                        a non, nobis ab laudantium repellat.
+
+                    </address>
+                </div>
+            </div>
+            <div class=" container right-parent7">
+                <h6 class="parent7-text">Status</h6>
+                <button class="btn dropdown btn-action-lead" id="dropdownlist" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Actions<i class="fas fa-chevron-down down-action"></i>
+                </button>
+            </div>
+            <div class="right-parent8">
+                <i class="fas fa-check-circle parent8-icon"></i>
+                <a href="#" role="button" class="parent8-submit">SUBMIT</a>
+            </div>
+        </div>
     </div>
-</div>
+    
+
+
+    <!-- closing-right-content -->
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
 </body>
+
 </html>

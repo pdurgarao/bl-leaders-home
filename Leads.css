@@ -7,7 +7,7 @@ body,html{
 /* sidebar */
 .parent {
     height: 100%;
-    overflow-y: auto;
+    overflow-y: visible;
     padding-right:0;
 }
 .heading-log{
@@ -33,8 +33,8 @@ body,html{
     }
     .content-left {
         padding-left:24px;
-        padding-right: 3px;
-        box-shadow: -1px 20px 17px 5px #888888;
+        padding-right: 0px;
+        /* box-shadow: -1px 20px 17px 5px #888888; */
         height: 100%;
     }
     
@@ -61,14 +61,14 @@ body,html{
     }
     .sidenav-list1 li a {
         padding: 0!important;
-        color:blue;
+        color:#b5c8d5;
         margin-left: 0.2rem;
         font-weight: 600!important;
     }
     .active-class {
         
         border-right:3px solid blue;
-        /* margin-right:10px; */
+        
     }
     .sidenav-list li {
         list-style: none;
@@ -151,7 +151,7 @@ body,html{
         width: 0.2rem;
       }
       aside::-webkit-scrollbar-track {
-        /* box-shadow: inset 0 0 6px rgba(2, 2, 0, 0.3); */
+         box-shadow: inset 0 0 6px rgba(2, 2, 0, 0.3); 
       }
       aside::-webkit-scrollbar-thumb{
         background-color: darkgrey;
