@@ -220,8 +220,8 @@
   background: #efedff;
   margin-left: 15px;
 }
-.middle-sub3 {
-  display: block!important;
+.middle-cont .middle-sub3 {
+  display: block;
 }
 .newleads {
   margin: 18px 0;
@@ -235,28 +235,6 @@
 .view:active p{
   color: blue;
 }
-/* try */
-/* .tableListMain {
-  display:block;
-} 
-.table-body-content {
-      display: flex;
-    flex-direction: column;
-}
-.table-row-content {
-  display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.tableimage {
-  width:50%!important;
-}
-
- .tableimage img {
-       object-fit: none;
-      border-radius: 66px;
- } */
-/* try  */
 
 /* tablemobile-view */
 .table-child {
@@ -308,13 +286,13 @@
 }
 /* right */
 .example-input {
-  margin:0px 15px!important;
+  margin:0px 15px;
 }
-.example-button {
-  right:28px!important;
+.example .example-button {
+  right:28px;
 }
-.right-start {
-margin-top:50px!important;
+ .right-start {
+margin-top:50px;
 }
 
 .card-body-box-content {

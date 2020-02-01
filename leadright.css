@@ -135,8 +135,10 @@
     background-color: #ff8a00;
 
 }
-.table-row-data,.table-row-data1,.table-row-data2 {
-    padding:4px 10px!important;
+.table-row-right .table-row-data,
+.table-row-right1 .table-row-data1,
+.table-row-right2 .table-row-data2 {
+    padding:4px 10px;
     font-size: 0.8rem;
 }
 
@@ -163,7 +165,7 @@
     background: #eff2f9;
     padding: 1rem;
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 .right-parent7 {
     margin-top:1.2rem;
@@ -188,7 +190,7 @@
     align-items: baseline;
     border-radius: 28px;
     height: 30px;
-    color:#fff!important;
+    color:#fff;
     font-size: small;
     background:#ff8a00;
     padding: 0px 12px;

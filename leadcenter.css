@@ -41,8 +41,8 @@
  }
 
 
- .all-leads a {
-     color: #01214a!important;
+ .content3-tab-left .all-leads a {
+     color: #01214a;
      font-weight: 600;
  }
  .content3-tab-left, .content3-tab-right{
@@ -71,16 +71,16 @@
  .tablerow:hover {
      background: #2f81e7;
  }
- .tabledata {
-     vertical-align: middle!important;
+ .tablerow .tabledata {
+     vertical-align: middle;
      font-size: small;
      color: #a4bdca;
  }
  .tablerow:hover .tabledata{
      color: white;
  }
- .tabledata-check {
-     vertical-align: middle!important;
+ .tablerow .tabledata-check {
+     vertical-align: middle;
      font-size: small;
      width: 7%;
      border-top-left-radius: 20px;
@@ -90,8 +90,8 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
  }
- .tabledata-image {
-     width:11%!important;
+ .tablerow .tabledata-image {
+     width:11%;
  }
  .table-image {
     border-radius: 64px;
@@ -129,11 +129,13 @@ margin-left:10px
     font-weight: 500;
  }
 
- .pagelinkitem1, .pagelinkitem5, .pagelinkitem4 {
-     border-top-left-radius: 20px!important;
-     border-bottom-left-radius: 20px!important;
-     border-top-right-radius: 20px!important;
-     border-bottom-right-radius: 20px!important;
+ .page-main-list-container .page-main-item1 .pagelinkitem1, 
+ .page-main-list-container .page-main-item5 .pagelinkitem4, 
+ .page-main-list-container .page-main-item6 .pagelinkitem5  {
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
      margin: 5px;
      background-color: #17345a;
      color:white;
@@ -148,7 +150,15 @@ margin-left:10px
      padding:3px 7px;
 
  }
- .pagelinkitem2:hover, .pagelinkitem3:hover{
+ .page-main-list-container .page-main-item2 .pagelinkitem2:hover, 
+ .page-main-list-container .page-main-item3 .pagelinkitem3:hover{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 5px;
+    background-color: #17345a;
+    color:white;
      
  }
 

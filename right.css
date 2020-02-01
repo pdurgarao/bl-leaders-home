@@ -2,15 +2,13 @@
 .example {
     display: flex;
     margin-top: 30px;
-    /* margin-left: 15px; */
-    /* margin-right: 15px; */
 
 }
 .example-input {
     border-radius: 20px;
     width: 100%;
     padding: 2px 12px;
-    margin-left: 0px;
+    /* margin-left: 0px; */
     height: auto;
 }
 .example-button {
@@ -40,9 +38,7 @@
     height: 100%;
     overflow-y: scroll;
 }
-/*.right-start h6 {
-    font-weight: 700;
-}*/
+
 .right-content-child {
     padding: 0;
 }
@@ -50,9 +46,7 @@
 .right-box {
     margin-bottom:20px;
 }
-/* .box-inner-left {
-    align-self: center;
-} */
+
 .totallead {
     margin:5px 0 5px 0;
     font-size: x-small;
