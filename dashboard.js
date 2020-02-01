@@ -7,7 +7,7 @@ function openSlide() {
 
 
 function closeSide() {
-    document.getElementById('sidebar-list-menu').style.left = "-250px";
+    document.getElementById('sidebar-list-menu').style.left = "-280px";
     //document.getElementById('wrapper-mobile').style.marginLeft = "0px";
     document.body.style.backgroundColor = "initial";
 }
