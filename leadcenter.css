@@ -47,6 +47,7 @@
  }
  .content3-tab-left, .content3-tab-right{
     margin-bottom:10px;
+    text-align: end;
  }
  .content3-tab-left1 a {
     margin-right:-12px;
