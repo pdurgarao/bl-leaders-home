@@ -63,9 +63,12 @@
 }
 .right-parent3 {
     margin-top: 20px;
-    margin-bottom: -8px;
 }
-.right-parent3 .parent3-text, .parent5-text, .parent6-text{
+.right-parent3 .parent3-text, .parent5-text{
+    color: #c9c9c9;
+    margin: auto;
+}
+.parent6-text{
     color: #c9c9c9;
 }
 .radio-btn{
@@ -77,7 +80,7 @@
     font-weight:500;
 }
 .right-parent5 .parent5-text {
-    margin-top:1.3rem;
+    margin-top:0.5rem;
     margin-bottom:0.3rem;
 }
 .time-date-right {
@@ -158,6 +161,7 @@
 .parent6-words{
     vertical-align: bottom;
     color: #d7d7d7;
+    font-size:10px;
 }
 
 .right-parent6-child {
@@ -175,6 +179,7 @@
 .time-par-am, .time-par-pm {
     font-size:small;
     border-radius: 20px;
+    padding:0 7px;
 }
 .time-par{
     display: flex;
@@ -194,6 +199,9 @@
     font-size: small;
     background:#ff8a00;
     padding: 0px 12px;
+}
+.btn-action-lead:hover {
+    color: white;
 }
 .btn-action-lead:focus {
     box-shadow: none;
@@ -258,38 +266,46 @@ margin-left :0.9rem;
     box-shadow: none;
   }
 /* radio-button */
-.radio-custom1 {
+.container2 {
     position:relative;
-    padding:10px;
+    padding: 0px 12px;
     
   }
-  .radio-custom1 input {
+  .container2 input {
     display:none;
     
   }
-  .radio-custom1 .radio-box {
-    width:20px;
-    height:20px;
+  .container2 .radio-check {
+    width:16px;
+    height:16px;
     position:absolute;
-    left:0;
-    border:1px solid grey;
+    top:10px;
+    border:2px solid grey;
     border-radius:20px;
     
     
   }
   
-  .radio-custom1 input:checked + .radio-box:after{
+  .container2 input:checked + .radio-check:after{
     content:"";
     position:absolute;
-    height:13px;
-    width:12px;
+    height:10px;
+    width:10px;
     border:1px solid orange;
     border-radius:10px;
-    top:10%;
-    left:15%;
+    top:4px;
+    left:4px;
     background:orange;
-    
+    transform:translate(-28%, -29%);
   }
+  .radio-text {
+      margin-left:22px;
+      transform: translate(4px, 7px);
+      font-size: small;
+      font-weight: 700;
+  }
+/* radio-button */
+
   .right-parent2-child2 a{
       position:relative;
   }

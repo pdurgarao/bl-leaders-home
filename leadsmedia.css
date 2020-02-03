@@ -12,6 +12,13 @@
     align-items: center;
     padding: 10px 0;
   }
+  .mobile-header {
+    position:fixed;
+    top:0;
+    z-index:1030;
+    background:white;
+    box-shadow: 0px 2px 20px 0px #6c757d36;
+  }
   .logo1 {
     margin-left: 15px;
     padding-bottom: 30px;
@@ -95,13 +102,16 @@
     font-size: 16px;
     font-weight: 400;
   }
+  .sidebar-list-child2 .linktags:active {
+    color:blue;
+    
+  }
   .sidebar .sidebar-list-child1 .single-board {
     text-decoration: none;
-    /* padding: 0!important; */
-    color: blue;
+    color: #b8cad7;
     font-size: 16px;
     margin-left: 18px;
-    font-weight: 600;         
+    /* font-weight: 600;          */
   }
   .sidebar-list-item-child2 {
     margin-bottom: 20px;
@@ -119,7 +129,6 @@
     color: #dbdbdb;
     font-size: 0.8rem;
   }
-  .sidebar-footer-content {}
   .user-logout {
     display: flex;
   }
@@ -162,6 +171,7 @@
 
   /* center-content */
   .lead-middle-content {
+    margin-top:60px; 
     height:auto;
     overflow-y: hidden;
   }
@@ -202,12 +212,20 @@
     display: flex;
     justify-content: space-between;
   }
+  .content3 {
+    display:block;
+  }
   .page-cont {
     display: none;
   }
   .lead-middle-content2 {
     display:flex;
     justify-content: space-between;
+  }
+  .lead-image {
+    width: 50px;
+    transform: translate(23%, 0%);
+
   }
   /* closing-center */
   
@@ -238,11 +256,39 @@
   justify-content: space-evenly;
 }
 /* table view */
+
+.mobile-leads {
+  margin-top:50px;
+  border-bottom: 2px solid #e2e9ef;
+}
+.mobile-view-heading {
+  font-size:18px;
+  margin-bottom:10px;
+}
 .table-card {
-  margin-top: 90px;
+  margin-top: 70px;
   background: #eff2f9;
   border-radius: 20px;
   margin-bottom: 20px;
+}
+.table-card1, .table-card2 {
+  margin-top: 60px;
+  background: #eff2f9;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.table-card:hover , .table-card1:hover, .table-card2:hover {
+  background:#2f81e7;
+  color:white;
+}
+.details-label{
+  margin:auto;
+}
+.details-text {
+
+}
+.details-child:last-child {
+  padding-bottom:10px;
 }
 .image-card1 {
   width: 30%;
@@ -254,9 +300,10 @@
 
 }
 .content-card {
-  margin-top: 14%;
+  margin-top: 65px;
   text-align: center;
-  padding:1rem;
+  padding:0;
+  margin-bottom: 20px;
 }
 .card-pro-name{
   font-size:18px;
@@ -273,7 +320,13 @@
 .card-pro-name {
   margin:auto;
 }
+.details-child {
+  padding:0px 15px;
+}
+ 
+
 /* closing table view */
+
 }
 @media (min-width: 576px) and (max-width: 767.98px){
   .nav-header {
@@ -379,7 +432,6 @@
   
     .sidebar .sidebar-list-child1 .single-board{
       text-decoration: none;
-      /* padding: 0!important; */
       color: blue;
       font-size: 16px;
       margin-left: 18px;
@@ -412,7 +464,6 @@
    display:flex;
     }
     .user-logout-dtls {
-      /* place-self: flex-end; */
      margin-left: 8px; 
      align-self: center;
     }
@@ -422,14 +473,12 @@
       font-weight: lighter;
     }
     .userout-name {
-      /* margin-bottom: -0.2rem; */
       color: blue;
       font-size: 0.8rem;
       margin-top: 12px;
       margin-bottom:3px;
     }
     .button-logout {
-    /* margin-bottom: 15px; */
       background-color: #fd7e14;
       text-align: center;
       margin:auto;     

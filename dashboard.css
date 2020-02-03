@@ -377,9 +377,10 @@ font-weight: 600;
     border-radius: 40px;
     width: 75%;
 }
- .emly-details, .view p{
+ .emly-details, .view a{
 font-size: small;
 color: #808080a1;
+text-decoration: none;
 }
 .table-row-content:hover {
     background:#2f81e7;
