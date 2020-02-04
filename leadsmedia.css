@@ -298,6 +298,10 @@
 .view-more-text {
   color: #6c757dc7;
     font-weight: 500;
+    text-align: end;
+}
+.view-more-text:active {
+  color:#3d6aa1;
 }
 .details-child:last-child {
   padding-bottom:10px;
