@@ -254,7 +254,7 @@ margin-left :0.9rem;
 .parent8-submit{
     display: inline-block;
     margin-right: auto;
-    vertical-align:bottom;
+    vertical-align:sub;
     color: white;
     font-size: 13px;
 }
