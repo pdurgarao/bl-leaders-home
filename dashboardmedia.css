@@ -108,16 +108,22 @@
     text-decoration: none;
     color: blue;
     font-size: 16px;
-    margin-left: 18px;
+    /* margin-left: 18px; */
     font-weight: 600!important;
   }
-  .sidebar-list-item-child2 {
+  .sidebar-list-child2 .sidebar-list-item-child2 {
     margin-bottom: 20px;
     padding: 4px;
+    display: block;
+    text-align: inherit;
+    text-transform: none;
   }
-  .sidebar-list-item-child1 {
+  .sidebar-list-child1 .sidebar-list-item-child1 {
     margin-bottom: 29px;
     padding-bottom: 4px;
+    display: block;
+    text-align: inherit;
+    text-transform: none;
   }
   .font-icon {}
   .sidebar-list-child2 {}
