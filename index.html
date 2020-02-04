@@ -40,47 +40,47 @@
                             <img src="Builder Manager.jpg" alt="logo" class="img-fluid header-img">
                             <h5 class="texth5">BUILDERSLEAD</h5>
                         </div>
-                        <a href="#" onclick="closeSide()"><i class="fas fa-times close-icon"></i></a>
+                        <!-- <i href="#" onclick="closeSide()"><i class="fas fa-times close-icon"></i></a> -->
                         <ul class="sidebar-list-child1">
-                            <li class="sidebar-list-item-child1 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child1">
                                 <a href="index.html" class="single-board"><i
                                         class="fas fa-tachometer-alt font-icon"></i>Dashboard</a>
                             </li>
                         </ul>
                         <h6 class="side-nav-sub">Dashboard</h6>
                         <ul class="sidebar-list-child2">
-                            <li class="sidebar-list-item-child2 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child2">
                                 <a href="" class="linktags"><i
                                         class="fas fa-campground font-icon"></i>Campaigns</a>
                             </li>
-                            <li class="sidebar-list-item-child2 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child2">
                                 <a href="Leads.html" class="linktags"><i class="fas fa-filter font-icon"></i>Leads</a>
                             </li>
-                            <li class="sidebar-list-item-child2 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child2" onclick="closeSide()">
                                 <a href="#" class="linktags"><i class="far fa-check-square font-icon"></i>Contacted</a>
                             </li>
-                            <li class="sidebar-list-item-child2 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child2" onclick="closeSide()">
                                 <a href="#" class="linktags"><i class="fas fa-comments font-icon"></i>Follow up</a>
                             </li>
-                            <li class="sidebar-list-item-child2 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child2" onclick="closeSide()">
                                 <a href="#" class="linktags"><i class="fas fa-history font-icon"></i>Pending</a>
                             </li>
-                            <li class="sidebar-list-item-child2 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child2" onclick="closeSide()">
                                 <a href="#" class="linktags"><i class="far fa-check-circle font-icon"></i>Closed</a>
                             </li>
                         </ul>
                         <h6 class="side-nav-sub">Others</h6>
                         <ul class="sidebar-list-child2">
-                            <li class="sidebar-list-item-child2 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child2" onclick="closeSide()">
                                 <a href="#" class="linktags"><i class="far fa-calendar font-icon"></i>Calender</a>
                             </li>
-                            <li class="sidebar-list-item-child2 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child2" onclick="closeSide()">
                                 <a href="#" class="linktags"><i class="fas fa-user font-icon"></i>Users</a>
                             </li>
-                            <li class="sidebar-list-item-child2 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child2" onclick="closeSide()">
                                 <a href="#" class="linktags"><i class="fas fa-user-circle font-icon"></i>Profile</a>
                             </li>
-                            <li class="sidebar-list-item-child2 mdl-button mdl-js-button mdl-js-ripple-effects">
+                            <li class="sidebar-list-item-child2" onclick="closeSide()">
                                 <a href="#" class="linktags"><i class="far fa-question-circle font-icon"></i>Help</a>
                             </li>
                         </ul>
@@ -293,17 +293,19 @@
                 <div class="newleads">
                     <h6>New Leads</h6>
                 </div>
-                <!-- <div class="campaign-veiw"> -->
                 <div class="campaign">
                     <button class="btn dropdown-toggle toggle-button-right" data-target="listdrop" type="button"
                         data-toggle="dropdown" style="color:#405b7b">CAMPAIGN NAME
                         <span class="caret-icon"></span></button>
                 </div>
                 <div class="view">
-                    <a href="Leads.html">View All..</a>
+                    <a class="view-child" href="Leads.html">View All..</a>
                 </div>
-                <!-- </div> -->
             </div>
+
+
+
+
             <!-- Desktop view -->
             <div class="tableList d-none d-md-block">
                 <table class="table table-borderless tableListMain">
@@ -371,6 +373,8 @@
             <!-- Desktop View -->
 
 
+
+
             <!-- mobile-view -->
             <div class="container table-child" onclick="closeSide()">
             <div class="parentemply d-block d-sm-none">
@@ -395,7 +399,7 @@
 
              <div class="parentemply d-block d-sm-none">
                 <div class="emply-child1">
-                    <div class="emly-child1-img" style="width: 21%;">
+                    <div class="emly-child1-img" style="width: 21%;"> 
                         <img src="anna.jpg" class="img-fluid child1-img">
                     </div>
                     <div class="emly-child1-text">
@@ -571,9 +575,6 @@
                                 <h4>Closed</h4>
                             </div>
                             <div class="progress-circular">
-                                <!-- <div class="circle">
-                                    <h4 class="circle-content">156</h4>
-                                </div> -->
                                 <div class="set-size charts-container">
                                     <div class="pie-wrapper progress-320">
                                         <span class="label" style="color:#1a3458">320</span>

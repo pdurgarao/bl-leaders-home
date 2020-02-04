@@ -239,12 +239,16 @@
 
 
             <div class="container lead-middle-content2">
-                <div class="content2-short">
-                    <button class="btn content2-btn1" type="button" data-toggle="dropdown">
+                <div class="content2-short dropdown">
+                    <button class="btn content2-btn1" type="button" data-toggle="dropdown" id="dropdown-sort">
                         <i class="fas fa-align-left content1-btn1-icon"></i>SORT BY
                         <i class="fas fa-chevron-down content1-btn1-icon2" id="dropdown-menu" aria-haspopup="true"
                             aria-expanded="false"></i>
                     </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-sort">
+                        <a href="#" class="dropdown-item">Name</a>
+                        <a href="#" class="dropdown-item">Size</a>
+                    </div>
                 </div>
                 <div class="content2-date">
                     <button class=" dropdown btn content2-btn1" type="button" data-toggle="dropdown">
