@@ -283,13 +283,13 @@ margin-right: 11px;
 .card-bodycontent h2 {
     font-size:3rem;
     margin-top:-18px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     color:white;                
     
 }.card-bodycontent2 h2 {
      font-size:3rem;
     margin-top:-18px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     color:#8080809c;                
     
 }
@@ -321,6 +321,7 @@ font-weight: 600;
 .card-content-middle2 h6 {
     font-size:small;
     color: white;
+    margin:0;
 }
 .card-middle-right {
     border-radius: 20px;
@@ -346,6 +347,10 @@ font-weight: 600;
 .card-content-middle-card2 h6 {
     font-size:small;
     color:#8080809c;
+    margin: 0;
+}
+.card-content-middle-card2 {
+    margin-bottom:15px;
 }
 .card-content-middle-card2 p {
     margin-bottom: 5px;
