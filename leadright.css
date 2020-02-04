@@ -201,7 +201,6 @@
     font-size: small;
     background:#ff8a00;
     padding: 0px 12px;
-    transform: translate(-2px, 20px);
 }
 .btn-action-lead:hover {
     color: white;
