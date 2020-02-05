@@ -119,7 +119,25 @@
     display: block;
     text-align: inherit;
     text-transform: none;
+    position: relative;
   }
+   /*.waves-effect {
+    content:"";
+    position:absolute;
+    top:-12px;
+    left:0;
+    padding:10% 50%;
+    background:#80808029;
+    transform:translate(0%, 0%);
+    transition:transform 1s, opacity 1s;
+    opacity:0;
+
+  }
+  .waveseffect1:active{
+    transition:0s;
+    transform:translate(0%, 0%);
+    opacity:1;
+  }  */
   .sidebar-list-child1 .sidebar-list-item-child1 {
     margin-bottom: 29px;
     padding-bottom: 4px;
@@ -254,9 +272,11 @@
 .time-par-am:focus, .time-par-pm:focus {
   box-shadow: none;
 }
-.right-parent8 {
-  /* margin-top:20px; */
+.right-parent5-child1 {
+  margin-right:8px;
 }
+ 
+
 .btns {
   display: flex;
   justify-content: space-evenly;
